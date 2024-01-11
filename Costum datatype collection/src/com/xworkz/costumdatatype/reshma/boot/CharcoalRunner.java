@@ -1,8 +1,12 @@
 package com.xworkz.costumdatatype.reshma.boot;
 
 import com.xworkz.costumdatatype.reshma.dto.CharcoalDTO;
+import com.xworkz.costumdatatype.reshma.dto.PaperDTO;
+import com.xworkz.costumdatatype.reshma.sort.*;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class CharcoalRunner {
@@ -22,6 +26,67 @@ public class CharcoalRunner {
         for (CharcoalDTO dto:list){
             System.out.println(dto);
         }
+        Comparator<CharcoalDTO> comparator=new CharcoarComparatorAsc();
+        Collections.sort(list,comparator);
+        System.out.println("Ascending order by using porosity");
+        for (CharcoalDTO ref:list){
+            System.out.println(ref);
+        }
+
+        Comparator<CharcoalDTO> comparator1 = new CharcoalComparatorDsc();
+        Collections.sort(list,comparator1);
+        System.out.println("Descending order by comparing porosity");
+        for (CharcoalDTO ref:list){
+            System.out.println(ref);
+        }
+
+        System.out.println("===================================");
+
+        Comparator<CharcoalDTO> comparator2=new CharcoarComparatorAsc1();
+        Collections.sort(list,comparator2);
+        System.out.println("Ascending order by using carbonContent");
+        for (CharcoalDTO ref:list){
+            System.out.println(ref);
+        }
+
+        Comparator<CharcoalDTO> comparator3 = new CharcoalComparatorDsc1();
+        Collections.sort(list,comparator3);
+        System.out.println("Descending order by comparing carbonContent");
+        for (CharcoalDTO ref:list){
+            System.out.println(ref);
+        }
+        System.out.println("===============================");
+
+        Comparator<CharcoalDTO> comparator4=new CharcoarComparatorAsc2();
+        Collections.sort(list,comparator4);
+        System.out.println("Ascending order by using ashContent");
+        for (CharcoalDTO ref:list){
+            System.out.println(ref);
+        }
+
+        Comparator<CharcoalDTO> comparator5 = new CharcoalComparatorDsc2();
+        Collections.sort(list,comparator5);
+        System.out.println("Descending order by comparing ashContent");
+        for (CharcoalDTO ref:list){
+            System.out.println(ref);
+        }
+        System.out.println("========================");
+
+        Comparator<CharcoalDTO> comparator6=new CharcoarComparatorAsc3();
+        Collections.sort(list,comparator6);
+        System.out.println("Ascending order by using heatOutput");
+        for (CharcoalDTO ref:list){
+            System.out.println(ref);
+        }
+
+        Comparator<CharcoalDTO> comparator7 = new CharcoalComparatorDsc3();
+        Collections.sort(list,comparator7);
+        System.out.println("Descending order by comparing heatOutput");
+        for (CharcoalDTO ref:list){
+            System.out.println(ref);
+        }
+
+
 
 
 
