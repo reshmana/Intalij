@@ -1,7 +1,6 @@
 package com.xworkz.costumdatatype.reshma.boot;
 
 import com.xworkz.costumdatatype.reshma.dto.PaperDTO;
-import com.xworkz.costumdatatype.reshma.dto.SensorDTO;
 import com.xworkz.costumdatatype.reshma.sort.*;
 
 import java.util.ArrayList;
