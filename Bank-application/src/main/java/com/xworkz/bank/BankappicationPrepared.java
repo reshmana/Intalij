@@ -25,18 +25,18 @@ public class BankappicationPrepared {
 //        preparedStatement.setString(1,"Malleshwaram");
 //        preparedStatement.setString(2,"SBI");
 //        preparedStatement.execute();
-//        preparedStatement.setInt(1,12);
-//        preparedStatement.setString(2,"ICICI");m
-//        preparedStatement.setString(3,"Kormangala");
-//        preparedStatement.setString(4,"ICICI00168");
-//        preparedStatement.setString(5,"Bengalore");
-//        preparedStatement.execute();
-//            preparedStatement.setInt(1,11);
-//            preparedStatement.setString(2,"Axis");
-//            preparedStatement.setString(3,"BTM");
-//            preparedStatement.setString(4,"AXIS00123");
-//            preparedStatement.setString(5,"Bengalore");
-//            preparedStatement.execute();
+        preparedStatement.setInt(1,12);
+        preparedStatement.setString(2,"ICICI");
+        preparedStatement.setString(3,"Kormangala");
+        preparedStatement.setString(4,"ICICI00168");
+        preparedStatement.setString(5,"Bengalore");
+        preparedStatement.execute();
+            preparedStatement.setInt(1,11);
+            preparedStatement.setString(2,"Axis");
+            preparedStatement.setString(3,"BTM");
+            preparedStatement.setString(4,"AXIS00123");
+            preparedStatement.setString(5,"Bengalore");
+            preparedStatement.execute();
 
             preparedStatement.setInt(1,13);
             preparedStatement.setString(2,"fedaral");
