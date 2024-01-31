@@ -30,6 +30,18 @@ public class BankapplicationPreparedStatementUpdate {
             preparedStatement.setString(2,"bengalore");
             preparedStatement.setString(3,"ICICI");
             preparedStatement.execute();
+
+            preparedStatement.addBatch();
+//            delete bank by branch and location using preparestatment
+//            update branchname by location and idfc
+//
+//            select PS
+//            methods
+//            inherietance resuability
+//            folder methods use resuability
+//            equal hashcode
+//            this,supre intanceof
+
             System.out.println("update bank using preparedStatement");
         } catch (SQLException e) {
             throw new RuntimeException(e);

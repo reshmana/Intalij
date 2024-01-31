@@ -44,7 +44,7 @@ public class BankappicationPrepared {
             preparedStatement.setString(4,"FEDR00578");
             preparedStatement.setString(5,"Bengalore");
             preparedStatement.execute();
-            System.out.println("insert data using preparedstatement!!!!!!");
+                System.out.println("insert data using preparedstatement!!!!!!");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
