@@ -13,5 +13,9 @@ public interface FlightBookingService {
 
     public  void deleteByFlightName(String FlightName);
 
+    public  FlightBooking FindByName(String flightName);
+
+    public List<FlightBooking> findAll();
+
 
 }

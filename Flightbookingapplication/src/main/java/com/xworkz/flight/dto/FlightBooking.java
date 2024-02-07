@@ -1,4 +1,4 @@
-package com.xworkz.flight.dto;
+   package com.xworkz.flight.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -20,6 +20,11 @@ public class FlightBooking {
         this.Price=Price;
 
     }
+
+    //what is jdbc
+    //steps of jdbc
+    //what is connection ], statement,preparedstatememnts
+    //deff b/w satement and preperstatement
 }
 
 

@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface FlightBookingRepository {
 
-    public void saveFlightBookingDitails(FlightBooking booking);
+    public void saveFlightBookingDetails(FlightBooking booking);
 
     public  void saveAll(List<FlightBooking> bookings);
 
@@ -14,7 +14,9 @@ public interface FlightBookingRepository {
 
     public void deleteBYFlightName(String flightName);
 
+public FlightBooking FindByName(String flightName);
 
+public  List <FlightBooking> findAll();
 
 
 }

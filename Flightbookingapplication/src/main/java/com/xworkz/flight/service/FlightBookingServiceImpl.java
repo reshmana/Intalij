@@ -18,11 +18,9 @@ public class FlightBookingServiceImpl implements FlightBookingService{
         }
         else {
             // repository  method save
-            flightBookingRepository.saveFlightBookingDitails(booking);
+            flightBookingRepository.saveFlightBookingDetails(booking);
         }
-
     }
-
     @Override
     public void saveAll(List<FlightBooking> bookings) {
         boolean validBooking=true;
@@ -46,9 +44,7 @@ public class FlightBookingServiceImpl implements FlightBookingService{
         }else{
             flightBookingRepository.update(FlightName,Source,Destination);
         }
-
     }
-
     @Override
     public void deleteByFlightName(String flightName) {
         if (flightName==null || flightName.isEmpty()){
@@ -56,6 +52,23 @@ public class FlightBookingServiceImpl implements FlightBookingService{
         }else {
             flightBookingRepository.deleteBYFlightName(flightName);
         }
-
     }
+    @Override
+    public FlightBooking FindByName(String flightName) {
+
+            if(flightName == null){
+                System.out.println("please entre the valid fligth nmae");
+            }
+            else{
+                flightBookingRepository.FindByName(flightName);
+            }
+        return null;
+    }
+    @Override
+    public List<FlightBooking> findAll() {
+       List<FlightBooking> bookings= flightBookingRepository.findAll();
+        return bookings;
+    }
+
+
 }

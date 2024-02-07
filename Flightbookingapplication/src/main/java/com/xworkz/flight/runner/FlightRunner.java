@@ -13,23 +13,37 @@ public class FlightRunner {
         //
 //        FlightBookingRepository flightBookingRepository
 //                =new FlightBookingRepositoryImpl();
-        FlightBooking flight=new FlightBooking("Airlines","dheli","bengalore",6000);
+        FlightBooking flight = new FlightBooking("Airlines", "dheli", "bengalore", 6000);
         //flightBookingRepository.saveFlightBookingDitails(flight);
 
-        FlightBookingService flightBookingService=new FlightBookingServiceImpl();
-        flightBookingService.save(flight);
+        FlightBookingService flightBookingService = new FlightBookingServiceImpl();
+      //  flightBookingService.save(flight);
 
         //list<flightBooking>
 
-        List<FlightBooking> bookings=new ArrayList<>();
-        FlightBooking flightBooking1=new FlightBooking("Indigo","Bengalore","Dehli",6000);
-        FlightBooking flightBooking2=new FlightBooking("Indigo","Bengalore","chennai",7000);
-        bookings.add(flightBooking1);
-        bookings.add(flightBooking2);
+//        List<FlightBooking> bookings = new ArrayList<>();
+//        FlightBooking flightBooking1 = new FlightBooking("Indigo", "Bengalore", "Dehli", 6000);
+//        FlightBooking flightBooking2 = new FlightBooking("Indigo", "Bengalore", "chennai", 7000);
+//        bookings.add(flightBooking1);
+//        bookings.add(flightBooking2);
         //flightBookingService.saveAll(bookings);
 
-       // flightBookingService.update("Emrates","Bengalore","Assam");
+        // flightBookingService.update("Emrates","Bengalore","Assam");
+//        flightBookingService.deleteByFlightName("Indigo");
 
-        flightBookingService.deleteByFlightName("Indigo");
+        //flightBookingService.FindByName("Airlines");
+
+        System.out.println("==================");
+
+        List<FlightBooking> bookings=flightBookingService.findAll();
+        bookings.forEach(bookings1->{
+            System.out.println("flight booking details");
+            System.out.println(bookings1.getFlightName());
+            System.out.println(bookings1.getSource());
+            System.out.println(bookings1.getDestination());
+            System.out.println(bookings1.getPrice());
+        });
+        
+
     }
 }
