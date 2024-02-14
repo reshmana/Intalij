@@ -1,8 +1,7 @@
-package com.xworkz.comparable.Runner;
+package com.xworkz.comparable.Boot;
 
 import com.xworkz.comparable.dto.WatchDTO;
 
-import javax.jws.soap.SOAPBinding;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

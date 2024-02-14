@@ -1,4 +1,4 @@
-package com.xworkz.comparable.Runner;
+package com.xworkz.comparable.Boot;
 
 import com.xworkz.comparable.dto.LakeDTO;
 

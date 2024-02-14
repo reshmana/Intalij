@@ -1,9 +1,8 @@
-package com.xworkz.comparable.Runner;
+package com.xworkz.comparable.Boot;
 
 import com.xworkz.comparable.dto.PlayGrondDTO;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
