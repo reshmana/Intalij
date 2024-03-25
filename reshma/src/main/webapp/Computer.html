@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>X-workz</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-3 mb-2 bg-secondary text-white">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="./index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="computerparts.html">Computer Parts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="./TvRecharge.html.html">TV Cable Recharge</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+<form action="computer" method="POST" class="shadow-lg p-3 mb-5 bg-body rounded " style="width: 80%; margin-top: 20px; margin-bottom: 10px; padding: 20px;"><center>
+    <div class="container">
+    <h2 class="text-warning">Computer parts</h2>
+        </div>
+  <div class="mb-3">
+      <div class="form-group">
+    <label for="brand">Brand:</label>
+          <select id="brand" name="brand" class="form-control form-control-sm " data-toggle="tooltip">
+    <option value="">Select</option>
+    <option>Apple</option>
+    <option>Dell </option>
+    <option>Hp corporation</option>
+    <option> Intel Lenovo</option>
+    <option>Lenovo</option>
+    <option> Microsoft</option>
+    <option>Samsung</option>
+      </select>
+  </div>
+      <div class="form-group">
+          <label for="model">Model:</label>
+          <input id="model" type="text" name="model" class="form-control form-control-sm">
+      </div>
+      <div class="form-group">
+          <label for="color">Color:</label>
+          <select id="color" name="color" class="form-control form-control-sm">
+          <option>Select</option>
+          <option>Black</option>
+          <option>Blue</option>
+          <option>Gray</option>
+          <option>Red</option>
+          <option>White</option>
+      </select>
+      </div>
+      <div class="form-group">
+     <label for="type">Type:</label>
+      <select  id="type" name="type" class="form-control form-control-sm">
+          <option>Select</option>
+          <option >Digital</option>
+          <option >Desktop</option>
+          <option >Tablet</option>
+          <option >All-in-One</option>
+          <option >Mini PC</option>
+      </select>
+      </div>
+
+      <div class="form-group">
+     <label for="ram"> RAM:</label>
+      <select id="ram" name="ram" class="form-control form-control-sm">
+          <option>Select</option>
+          <option >4GB</option>
+          <option >8GB</option>
+          <option >16GB</option>
+          <option >32GB</option>
+          <option >64GB</option>
+      </select>
+      </div>
+
+       <div class="form-group">
+      <label for="hard">Hard Disk:</label>
+           <select id="hard"  name="hard_disk" class="form-control form-control-sm">
+          <option>select</option>
+          <option >256GB</option>
+          <option >512GB</option>
+          <option >1TB</option>
+          <option >2TB</option>
+          <option >4TB</option>
+       </select>
+       </div>
+      <div class="form-group">
+          <label for="processer">Processor:</label>
+       <select id="processer" name="processor" class="form-control form-control-sm">
+          <option>select</option>
+          <option >i3</option>
+          <option >i5</option>
+          <option >i7</option>
+          <option >i9</option>
+      </select>
+      </div>
+      <div class="form-group">
+      <label for="motherboard" >Motherboard:</label>
+       <select id="motherboard" name="motherboard" class="form-control form-control-sm">
+          <option>select</option>
+          <option >ATX</option>
+          <option >Micro ATX</option>
+          <option >Mini ITX</option>
+          <option >BTX</option>
+      </select>
+      </div>
+
+      <div class="form-group">
+     <label for="cache"> Cache Size: </label>
+          <select id="cache" name="cache_size" class="form-control form-control-sm">
+          <option>select</option>
+          <option >2MB</option>
+          <option >4MB</option>
+          <option >6MB</option>
+      </select>
+      </div>
+      <div class="form-group">
+          <label class="" for="cost">Cost:</label>
+       <input  id="cost" type="text" name="cost" class="form-control form-control-sm">
+      </div>
+      <div class="form-group">
+          <label for="quantity"> Quantity:</label>
+          <input id="quantity" type="text" name="quantity" class="form-control form-control-sm">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</center>
+</form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>X-workz</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</head>
+
+
+<body class="p-3 mb-2 bg-secondary text-white">
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="./index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link text-white"  href="./Computer.html">Computer Parts</a>
+            </li>
+            <li>
+                <a class="nav-link text-white" href="./TvRecharge.html">TV Cable Recharge</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<form action="tvRecharge" method="post" id="rechargeForm">
+
+
+
+    <div class="container mt-5 mb-5 d-flex justify-content-center">
+        <div class="card px-5 py-4 bg-dark">
+            <div class="card-body">
+                <h6 class="card-title mb-3 text-white fs-1">Tv Cable Recharge</h6>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <div class="mb-1">
+
+                                <label for="cust" class="form-label text-white">Customer Id</label>
+                                <input type="text" class="form-control" name="customer" id="cust" aria-describedby="modelHelp" onchange="id()" required>
+                                <span id="cerror"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <div class="input-group mb-4 mt-5">
+                                <label class="input-group-text" for="ven">Vendor</label>
+                                <select class="form-select" id="ven" name="vendor"  required>
+                                    <option selected value="0">Choose...</option>
+                                    <option value="Asianet Satellite Communications">Asianet Satellite Communications</option>
+                                    <option value="Bharti Airtel">Bharti Airtel</option>
+                                    <option value="Den Networks">Den Networks</option>
+                                    <option value="GTPL Hathway">GTPL Hathway</option>
+                                    <option value="Hathway Cable And Datacom">Hathway Cable And Datacom</option>
+                                    <option value="Reliance Jio">Reliance Jio</option>
+                                    <option value="Sun Direct TV">Sun Direct TV</option>
+                                    <option value="Tata Play (Tata Sky)">Tata Play (Tata Sky)</option>
+                                    <option value="Vimeo Technologies">Vimeo Technologies</option>
+                                </select>
+                                <span id="verror"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <div class="mb-1">
+                                <label for="amnt" class="form-label text-white">Recharge Amount</label>
+                                <input type="text" class="form-control" name="amount" id="amnt" aria-describedby="modelHelp" onchange="amount()" required>
+                                <span id="aerror"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <div class="input-group  mt-5">
+                                <label class="input-group-text" for="rtype">Recharge Type</label>
+                                <select class="form-select" id="rtype" name="type"  required>
+                                    <option selected value="0">Choose...</option>
+                                    <option value="Monthly">Monthly</option>
+                                    <option value="Top Up">Top Up</option>
+                                    <option value="OTT">OTT</option>
+
+                                </select>
+                                <span id="terror"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <div class="input-group mb-3 mt-5">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check" name="accept" required>
+                                    <label class="form-check-label text-white" for="check">
+                                        Accept
+                                    </label>
+                                    <span id="box"></span>
+                                </div></div></div></div></div>
+
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+
+                            <button type="submit"  id="btn"  class="me-5 ms-5">Recharge</button>
+                            <!--                        <button type="submit" id="submit" disabled>Recharge</button>-->
+                            <!--                        <input type="submit" value="submit">-->
+
+                            <a href="./TvRecharge.html" class="ms-5"><input type="button" placeholder="Clear" value="Refresh" ></a>
+                        </div></div>
+
+                </div></div>
+        </div>
+    </div>
+
+</form>
+<script src="TvRecharge.js"></script>
+
+</body>
+
+</html>
